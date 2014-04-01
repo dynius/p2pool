@@ -1,0 +1,746 @@
+2014-03-31 12:20:09.383075 p2pool (version unknown 7032706f6f6c)
+2014-03-31 12:20:09.383238 
+2014-03-31 12:20:09.383488 Testing bitcoind RPC connection to 'http://192.168.0.102:55548/' with username 'desecoinrpc'...
+2014-03-31 12:20:09.704080 > Error while checking Bitcoin connection:
+2014-03-31 12:20:09.704226 > Traceback (most recent call last):
+2014-03-31 12:20:09.704350 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+2014-03-31 12:20:09.704457 >     current.result = callback(current.result, *args, **kw)
+2014-03-31 12:20:09.704557 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1126, in gotResult
+2014-03-31 12:20:09.704659 >     _inlineCallbacks(r, g, deferred)
+2014-03-31 12:20:09.704758 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 12:20:09.704875 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 12:20:09.704978 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 12:20:09.705075 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 12:20:09.705168 > --- <exception caught here> ---
+2014-03-31 12:20:09.705262 >   File "/home/dyne/01/p2pool/p2pool/util/deferral.py", line 41, in f
+2014-03-31 12:20:09.705377 >     result = yield func(*args, **kwargs)
+2014-03-31 12:20:09.705475 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 12:20:09.705570 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 12:20:09.705667 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 12:20:09.705762 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 12:20:09.705886 >   File "/home/dyne/01/p2pool/p2pool/bitcoin/helper.py", line 13, in check
+2014-03-31 12:20:09.705989 >     if not (yield net.PARENT.RPC_CHECK(bitcoind)):
+2014-03-31 12:20:09.706083 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 12:20:09.706177 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 12:20:09.706272 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 12:20:09.706371 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 12:20:09.706483 >   File "/home/dyne/01/p2pool/p2pool/bitcoin/networks.py", line 16, in <lambda>
+2014-03-31 12:20:09.706600 >     'densecoinaddress' in (yield bitcoind.rpc_help()) and
+2014-03-31 12:20:09.706719 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 12:20:09.706847 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 12:20:09.706955 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 12:20:09.707061 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 12:20:09.707157 >   File "/home/dyne/01/p2pool/p2pool/util/jsonrpc.py", line 126, in _http_do
+2014-03-31 12:20:09.707252 >     raise e
+2014-03-31 12:20:09.707441 > twisted.web.error.Error: 401 Authorization Required
+2014-03-31 12:20:10.965721 > Error while checking Bitcoin connection:
+2014-03-31 12:20:10.965890 > Traceback (most recent call last):
+2014-03-31 12:20:10.966498 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+2014-03-31 12:20:10.966598 >     current.result = callback(current.result, *args, **kw)
+2014-03-31 12:20:10.966694 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1126, in gotResult
+2014-03-31 12:20:10.966800 >     _inlineCallbacks(r, g, deferred)
+2014-03-31 12:20:10.967294 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 12:20:10.967673 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 12:20:10.967886 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 12:20:10.968052 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 12:20:10.968202 > --- <exception caught here> ---
+2014-03-31 12:20:10.968369 >   File "/home/dyne/01/p2pool/p2pool/util/deferral.py", line 41, in f
+2014-03-31 12:20:10.968507 >     result = yield func(*args, **kwargs)
+2014-03-31 12:20:10.968656 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 12:20:10.968820 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 12:20:10.968956 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 12:20:10.969099 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 12:20:10.969244 >   File "/home/dyne/01/p2pool/p2pool/bitcoin/helper.py", line 13, in check
+2014-03-31 12:20:10.969389 >     if not (yield net.PARENT.RPC_CHECK(bitcoind)):
+2014-03-31 12:20:10.969527 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 12:20:10.969652 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 12:20:10.969816 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 12:20:10.969941 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 12:20:10.970073 >   File "/home/dyne/01/p2pool/p2pool/bitcoin/networks.py", line 16, in <lambda>
+2014-03-31 12:20:10.970236 >     'densecoinaddress' in (yield bitcoind.rpc_help()) and
+2014-03-31 12:20:10.970357 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 12:20:10.970454 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 12:20:10.970549 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 12:20:10.970755 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 12:20:10.970863 >   File "/home/dyne/01/p2pool/p2pool/util/jsonrpc.py", line 126, in _http_do
+2014-03-31 12:20:10.970961 >     raise e
+2014-03-31 12:20:10.971055 > twisted.web.error.Error: 401 Authorization Required
+2014-03-31 12:20:12.224715 > Error while checking Bitcoin connection:
+2014-03-31 12:20:12.224796 > Traceback (most recent call last):
+2014-03-31 12:20:12.224835 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+2014-03-31 12:20:12.224873 >     current.result = callback(current.result, *args, **kw)
+2014-03-31 12:20:12.224952 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1126, in gotResult
+2014-03-31 12:20:12.224991 >     _inlineCallbacks(r, g, deferred)
+2014-03-31 12:20:12.225027 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 12:20:12.225064 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 12:20:12.225100 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 12:20:12.225138 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 12:20:12.225174 > --- <exception caught here> ---
+2014-03-31 12:20:12.225209 >   File "/home/dyne/01/p2pool/p2pool/util/deferral.py", line 41, in f
+2014-03-31 12:20:12.225245 >     result = yield func(*args, **kwargs)
+2014-03-31 12:20:12.225280 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 12:20:12.225316 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 12:20:12.225351 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 12:20:12.225388 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 12:20:12.225444 >   File "/home/dyne/01/p2pool/p2pool/bitcoin/helper.py", line 13, in check
+2014-03-31 12:20:12.225481 >     if not (yield net.PARENT.RPC_CHECK(bitcoind)):
+2014-03-31 12:20:12.225516 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 12:20:12.225564 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 12:20:12.225599 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 12:20:12.225636 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 12:20:12.225671 >   File "/home/dyne/01/p2pool/p2pool/bitcoin/networks.py", line 16, in <lambda>
+2014-03-31 12:20:12.225708 >     'densecoinaddress' in (yield bitcoind.rpc_help()) and
+2014-03-31 12:20:12.225742 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 12:20:12.225778 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 12:20:12.225813 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 12:20:12.225850 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 12:20:12.225884 >   File "/home/dyne/01/p2pool/p2pool/util/jsonrpc.py", line 126, in _http_do
+2014-03-31 12:20:12.225951 >     raise e
+2014-03-31 12:20:12.225989 > twisted.web.error.Error: 401 Authorization Required
+2014-03-31 12:20:13.480315 > Error while checking Bitcoin connection:
+2014-03-31 12:20:13.480409 > Traceback (most recent call last):
+2014-03-31 12:20:13.480459 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+2014-03-31 12:20:13.480509 >     current.result = callback(current.result, *args, **kw)
+2014-03-31 12:20:13.480577 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1126, in gotResult
+2014-03-31 12:20:13.480626 >     _inlineCallbacks(r, g, deferred)
+2014-03-31 12:20:13.480674 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 12:20:13.480722 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 12:20:13.480768 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 12:20:13.480817 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 12:20:13.480863 > --- <exception caught here> ---
+2014-03-31 12:20:13.480909 >   File "/home/dyne/01/p2pool/p2pool/util/deferral.py", line 41, in f
+2014-03-31 12:20:13.480956 >     result = yield func(*args, **kwargs)
+2014-03-31 12:20:13.481002 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 12:20:13.481049 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 12:20:13.481108 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 12:20:13.481156 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 12:20:13.481203 >   File "/home/dyne/01/p2pool/p2pool/bitcoin/helper.py", line 13, in check
+2014-03-31 12:20:13.481250 >     if not (yield net.PARENT.RPC_CHECK(bitcoind)):
+2014-03-31 12:20:13.481296 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 12:20:13.481343 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 12:20:13.481389 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 12:20:13.481438 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 12:20:13.481484 >   File "/home/dyne/01/p2pool/p2pool/bitcoin/networks.py", line 16, in <lambda>
+2014-03-31 12:20:13.481538 >     'densecoinaddress' in (yield bitcoind.rpc_help()) and
+2014-03-31 12:20:13.481617 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 12:20:13.481665 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 12:20:13.481712 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 12:20:13.481759 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 12:20:13.481818 >   File "/home/dyne/01/p2pool/p2pool/util/jsonrpc.py", line 126, in _http_do
+2014-03-31 12:20:13.481865 >     raise e
+2014-03-31 12:20:13.481911 > twisted.web.error.Error: 401 Authorization Required
+2014-03-31 12:20:53.091217 p2pool (version unknown 7032706f6f6c)
+2014-03-31 12:20:53.091409 
+2014-03-31 12:20:53.091525 Testing bitcoind RPC connection to 'http://192.168.0.102:55548/' with username 'densecoinrpc'...
+2014-03-31 12:20:53.102816 > Error getting work from bitcoind:
+2014-03-31 12:20:53.102945 > Traceback (most recent call last):
+2014-03-31 12:20:53.103034 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+2014-03-31 12:20:53.103138 >     current.result = callback(current.result, *args, **kw)
+2014-03-31 12:20:53.103241 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1126, in gotResult
+2014-03-31 12:20:53.103391 >     _inlineCallbacks(r, g, deferred)
+2014-03-31 12:20:53.103487 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 12:20:53.103576 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 12:20:53.103660 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 12:20:53.103770 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 12:20:53.103857 > --- <exception caught here> ---
+2014-03-31 12:20:53.103941 >   File "/home/dyne/01/p2pool/p2pool/util/deferral.py", line 41, in f
+2014-03-31 12:20:53.104027 >     result = yield func(*args, **kwargs)
+2014-03-31 12:20:53.104113 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 12:20:53.104199 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 12:20:53.104300 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 12:20:53.104388 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 12:20:53.104472 >   File "/home/dyne/01/p2pool/p2pool/bitcoin/helper.py", line 36, in getwork
+2014-03-31 12:20:53.104557 >     work = yield go()
+2014-03-31 12:20:53.104642 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 12:20:53.104726 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 12:20:53.104829 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 12:20:53.104924 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 12:20:53.105007 >   File "/home/dyne/01/p2pool/p2pool/util/jsonrpc.py", line 133, in _http_do
+2014-03-31 12:20:53.105132 >     raise Error_for_code(resp['error']['code'])(resp['error']['message'], resp['error'].get('data', None))
+2014-03-31 12:20:53.105280 > p2pool.util.jsonrpc.NarrowError: -9 Densecoin is not connected!
+2014-03-31 12:30:28.259782 p2pool (version unknown 7032706f6f6c)
+2014-03-31 12:30:28.259958 
+2014-03-31 12:30:28.260067 Testing bitcoind RPC connection to 'http://127.0.0.1:55548/' with username 'densecoinrpc'...
+2014-03-31 12:30:28.387638 > Error getting work from bitcoind:
+2014-03-31 12:30:28.387826 > Traceback (most recent call last):
+2014-03-31 12:30:28.387967 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+2014-03-31 12:30:28.388098 >     current.result = callback(current.result, *args, **kw)
+2014-03-31 12:30:28.388215 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1126, in gotResult
+2014-03-31 12:30:28.388351 >     _inlineCallbacks(r, g, deferred)
+2014-03-31 12:30:28.388473 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 12:30:28.388610 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 12:30:28.388722 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 12:30:28.388858 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 12:30:28.388990 > --- <exception caught here> ---
+2014-03-31 12:30:28.389114 >   File "/home/dyne/01/p2pool/p2pool/util/deferral.py", line 41, in f
+2014-03-31 12:30:28.389244 >     result = yield func(*args, **kwargs)
+2014-03-31 12:30:28.389372 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 12:30:28.389495 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 12:30:28.389628 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 12:30:28.389775 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 12:30:28.389909 >   File "/home/dyne/01/p2pool/p2pool/bitcoin/helper.py", line 36, in getwork
+2014-03-31 12:30:28.390033 >     work = yield go()
+2014-03-31 12:30:28.390157 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 12:30:28.390303 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 12:30:28.390428 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 12:30:28.390551 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 12:30:28.390673 >   File "/home/dyne/01/p2pool/p2pool/util/jsonrpc.py", line 133, in _http_do
+2014-03-31 12:30:28.390795 >     raise Error_for_code(resp['error']['code'])(resp['error']['message'], resp['error'].get('data', None))
+2014-03-31 12:30:28.390920 > p2pool.util.jsonrpc.NarrowError: -9 Densecoin is not connected!
+2014-03-31 12:31:30.041854 p2pool (version unknown 7032706f6f6c)
+2014-03-31 12:31:30.042006 
+2014-03-31 12:31:30.042115 Testing bitcoind RPC connection to 'http://127.0.0.1:55548/' with username 'densecoinrpc'...
+2014-03-31 12:31:30.073348 > Error getting work from bitcoind:
+2014-03-31 12:31:30.073576 > Traceback (most recent call last):
+2014-03-31 12:31:30.073767 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+2014-03-31 12:31:30.074182 >     current.result = callback(current.result, *args, **kw)
+2014-03-31 12:31:30.074445 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1126, in gotResult
+2014-03-31 12:31:30.074610 >     _inlineCallbacks(r, g, deferred)
+2014-03-31 12:31:30.074771 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 12:31:30.074947 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 12:31:30.075182 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 12:31:30.075434 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 12:31:30.075601 > --- <exception caught here> ---
+2014-03-31 12:31:30.075758 >   File "/home/dyne/01/p2pool/p2pool/util/deferral.py", line 41, in f
+2014-03-31 12:31:30.075889 >     result = yield func(*args, **kwargs)
+2014-03-31 12:31:30.076043 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 12:31:30.076193 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 12:31:30.076349 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 12:31:30.076529 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 12:31:30.076653 >   File "/home/dyne/01/p2pool/p2pool/bitcoin/helper.py", line 36, in getwork
+2014-03-31 12:31:30.076914 >     work = yield go()
+2014-03-31 12:31:30.077011 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 12:31:30.077100 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 12:31:30.077184 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 12:31:30.077275 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 12:31:30.077362 >   File "/home/dyne/01/p2pool/p2pool/util/jsonrpc.py", line 133, in _http_do
+2014-03-31 12:31:30.077460 >     raise Error_for_code(resp['error']['code'])(resp['error']['message'], resp['error'].get('data', None))
+2014-03-31 12:31:30.077544 > p2pool.util.jsonrpc.NarrowError: -9 Densecoin is not connected!
+2014-03-31 15:21:33.853760 p2pool (version unknown 7032706f6f6c)
+2014-03-31 15:21:33.853911 
+2014-03-31 15:21:33.854023 Testing bitcoind RPC connection to 'http://127.0.0.1:55548/' with username 'densecoinrpc'...
+2014-03-31 15:21:33.875738 >     Check failed! Make sure that you're connected to the right bitcoind with --bitcoind-rpc-port!
+2014-03-31 15:21:34.880408 >     Check failed! Make sure that you're connected to the right bitcoind with --bitcoind-rpc-port!
+2014-03-31 15:21:35.885749 >     Check failed! Make sure that you're connected to the right bitcoind with --bitcoind-rpc-port!
+2014-03-31 15:21:36.890216 >     Check failed! Make sure that you're connected to the right bitcoind with --bitcoind-rpc-port!
+2014-03-31 15:23:00.821550 p2pool (version unknown 7032706f6f6c)
+2014-03-31 15:23:00.821708 
+2014-03-31 15:23:00.821886 Testing bitcoind RPC connection to 'http://127.0.0.1:55548/' with username 'densecoinrpc'...
+2014-03-31 15:23:00.827068 >     Check failed! Make sure that you're connected to the right bitcoind with --bitcoind-rpc-port!
+2014-03-31 15:23:01.839216 >     Check failed! Make sure that you're connected to the right bitcoind with --bitcoind-rpc-port!
+2014-03-31 15:23:02.844544 >     Check failed! Make sure that you're connected to the right bitcoind with --bitcoind-rpc-port!
+2014-03-31 15:23:03.848927 >     Check failed! Make sure that you're connected to the right bitcoind with --bitcoind-rpc-port!
+2014-03-31 15:23:04.853530 >     Check failed! Make sure that you're connected to the right bitcoind with --bitcoind-rpc-port!
+2014-03-31 15:23:34.672926 p2pool (version unknown 7032706f6f6c)
+2014-03-31 15:23:34.673082 
+2014-03-31 15:23:34.673190 Testing bitcoind RPC connection to 'http://127.0.0.1:55548/' with username 'densecoinrpc'...
+2014-03-31 15:23:34.677479 >     Check failed! Make sure that you're connected to the right bitcoind with --bitcoind-rpc-port!
+2014-03-31 15:23:35.697905 >     Check failed! Make sure that you're connected to the right bitcoind with --bitcoind-rpc-port!
+2014-03-31 15:23:36.701923 >     Check failed! Make sure that you're connected to the right bitcoind with --bitcoind-rpc-port!
+2014-03-31 15:23:37.707417 >     Check failed! Make sure that you're connected to the right bitcoind with --bitcoind-rpc-port!
+2014-03-31 15:23:38.713448 >     Check failed! Make sure that you're connected to the right bitcoind with --bitcoind-rpc-port!
+2014-03-31 15:24:35.033908 p2pool (version unknown 7032706f6f6c)
+2014-03-31 15:24:35.034033 
+2014-03-31 15:24:35.034117 Testing bitcoind RPC connection to 'http://127.0.0.1:55548/' with username 'densecoinrpc'...
+2014-03-31 15:24:35.038263 >     Check failed! Make sure that you're connected to the right bitcoind with --bitcoind-rpc-port!
+2014-03-31 15:24:36.051972 >     Check failed! Make sure that you're connected to the right bitcoind with --bitcoind-rpc-port!
+2014-03-31 15:24:37.057623 >     Check failed! Make sure that you're connected to the right bitcoind with --bitcoind-rpc-port!
+2014-03-31 15:26:01.428090 p2pool (version unknown 7032706f6f6c)
+2014-03-31 15:26:01.428245 
+2014-03-31 15:26:01.428435 Testing bitcoind RPC connection to 'http://127.0.0.1:55548/' with username 'densecoinrpc'...
+2014-03-31 15:26:01.485770 > Error getting work from bitcoind:
+2014-03-31 15:26:01.485916 > Traceback (most recent call last):
+2014-03-31 15:26:01.485972 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+2014-03-31 15:26:01.486026 >     current.result = callback(current.result, *args, **kw)
+2014-03-31 15:26:01.486106 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1126, in gotResult
+2014-03-31 15:26:01.486161 >     _inlineCallbacks(r, g, deferred)
+2014-03-31 15:26:01.486214 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 15:26:01.486285 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 15:26:01.486357 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 15:26:01.486413 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 15:26:01.486464 > --- <exception caught here> ---
+2014-03-31 15:26:01.486515 >   File "/home/dyne/01/p2pool/p2pool/util/deferral.py", line 41, in f
+2014-03-31 15:26:01.486565 >     result = yield func(*args, **kwargs)
+2014-03-31 15:26:01.486615 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 15:26:01.486666 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 15:26:01.486716 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 15:26:01.486768 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 15:26:01.486818 >   File "/home/dyne/01/p2pool/p2pool/bitcoin/helper.py", line 36, in getwork
+2014-03-31 15:26:01.486884 >     work = yield go()
+2014-03-31 15:26:01.486939 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 15:26:01.486993 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 15:26:01.487044 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 15:26:01.487095 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 15:26:01.487144 >   File "/home/dyne/01/p2pool/p2pool/util/jsonrpc.py", line 133, in _http_do
+2014-03-31 15:26:01.487214 >     raise Error_for_code(resp['error']['code'])(resp['error']['message'], resp['error'].get('data', None))
+2014-03-31 15:26:01.487268 > p2pool.util.jsonrpc.NarrowError: -9 Densecoin is not connected!
+2014-03-31 15:42:22.773528 p2pool (version unknown 7032706f6f6c)
+2014-03-31 15:42:22.773673 
+2014-03-31 15:42:22.773827 Testing bitcoind RPC connection to 'http://127.0.0.1:55548/' with username 'densecoinrpc'...
+2014-03-31 15:42:22.785135 > Error getting work from bitcoind:
+2014-03-31 15:42:22.785243 > Traceback (most recent call last):
+2014-03-31 15:42:22.785344 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+2014-03-31 15:42:22.785429 >     current.result = callback(current.result, *args, **kw)
+2014-03-31 15:42:22.785517 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1126, in gotResult
+2014-03-31 15:42:22.785600 >     _inlineCallbacks(r, g, deferred)
+2014-03-31 15:42:22.785686 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 15:42:22.785774 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 15:42:22.785872 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 15:42:22.786082 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 15:42:22.786166 > --- <exception caught here> ---
+2014-03-31 15:42:22.786258 >   File "/home/dyne/01/p2pool/p2pool/util/deferral.py", line 41, in f
+2014-03-31 15:42:22.786367 >     result = yield func(*args, **kwargs)
+2014-03-31 15:42:22.786459 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 15:42:22.786547 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 15:42:22.786632 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 15:42:22.786715 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 15:42:22.786810 >   File "/home/dyne/01/p2pool/p2pool/bitcoin/helper.py", line 36, in getwork
+2014-03-31 15:42:22.786895 >     work = yield go()
+2014-03-31 15:42:22.786977 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 15:42:22.787063 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 15:42:22.787157 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 15:42:22.787245 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 15:42:22.787398 >   File "/home/dyne/01/p2pool/p2pool/util/jsonrpc.py", line 133, in _http_do
+2014-03-31 15:42:22.787491 >     raise Error_for_code(resp['error']['code'])(resp['error']['message'], resp['error'].get('data', None))
+2014-03-31 15:42:22.787578 > p2pool.util.jsonrpc.NarrowError: -9 Densecoin is not connected!
+2014-03-31 15:42:39.137142 p2pool (version unknown 7032706f6f6c)
+2014-03-31 15:42:39.137299 
+2014-03-31 15:42:39.137472 Testing bitcoind RPC connection to 'http://127.0.0.1:55548/' with username 'densecoinrpc'...
+2014-03-31 15:42:39.147617 > Error getting work from bitcoind:
+2014-03-31 15:42:39.147762 > Traceback (most recent call last):
+2014-03-31 15:42:39.147870 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+2014-03-31 15:42:39.147958 >     current.result = callback(current.result, *args, **kw)
+2014-03-31 15:42:39.148049 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1126, in gotResult
+2014-03-31 15:42:39.148133 >     _inlineCallbacks(r, g, deferred)
+2014-03-31 15:42:39.148215 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 15:42:39.148298 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 15:42:39.148376 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 15:42:39.148469 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 15:42:39.148555 > --- <exception caught here> ---
+2014-03-31 15:42:39.148638 >   File "/home/dyne/01/p2pool/p2pool/util/deferral.py", line 41, in f
+2014-03-31 15:42:39.148722 >     result = yield func(*args, **kwargs)
+2014-03-31 15:42:39.148820 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 15:42:39.148935 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 15:42:39.149027 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 15:42:39.149111 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 15:42:39.149194 >   File "/home/dyne/01/p2pool/p2pool/bitcoin/helper.py", line 36, in getwork
+2014-03-31 15:42:39.149277 >     work = yield go()
+2014-03-31 15:42:39.149379 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 15:42:39.149464 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 15:42:39.149558 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 15:42:39.149643 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 15:42:39.149726 >   File "/home/dyne/01/p2pool/p2pool/util/jsonrpc.py", line 133, in _http_do
+2014-03-31 15:42:39.149824 >     raise Error_for_code(resp['error']['code'])(resp['error']['message'], resp['error'].get('data', None))
+2014-03-31 15:42:39.149908 > p2pool.util.jsonrpc.NarrowError: -9 Densecoin is not connected!
+2014-03-31 15:42:42.156736 > Error getting work from bitcoind:
+2014-03-31 15:42:42.156853 > Traceback (most recent call last):
+2014-03-31 15:42:42.156952 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+2014-03-31 15:42:42.157036 >     current.result = callback(current.result, *args, **kw)
+2014-03-31 15:42:42.157118 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1126, in gotResult
+2014-03-31 15:42:42.157199 >     _inlineCallbacks(r, g, deferred)
+2014-03-31 15:42:42.157279 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 15:42:42.157411 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 15:42:42.157494 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 15:42:42.157591 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 15:42:42.157673 > --- <exception caught here> ---
+2014-03-31 15:42:42.157754 >   File "/home/dyne/01/p2pool/p2pool/util/deferral.py", line 41, in f
+2014-03-31 15:42:42.157852 >     result = yield func(*args, **kwargs)
+2014-03-31 15:42:42.157935 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 15:42:42.158018 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 15:42:42.158099 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 15:42:42.158182 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 15:42:42.158263 >   File "/home/dyne/01/p2pool/p2pool/bitcoin/helper.py", line 36, in getwork
+2014-03-31 15:42:42.158339 >     work = yield go()
+2014-03-31 15:42:42.158425 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 15:42:42.158508 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 15:42:42.158589 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 15:42:42.158671 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 15:42:42.158752 >   File "/home/dyne/01/p2pool/p2pool/util/jsonrpc.py", line 133, in _http_do
+2014-03-31 15:42:42.158876 >     raise Error_for_code(resp['error']['code'])(resp['error']['message'], resp['error'].get('data', None))
+2014-03-31 15:42:42.158959 > p2pool.util.jsonrpc.NarrowError: -9 Densecoin is not connected!
+2014-03-31 15:42:45.164384 > Error getting work from bitcoind:
+2014-03-31 15:42:45.164526 > Traceback (most recent call last):
+2014-03-31 15:42:45.164658 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+2014-03-31 15:42:45.164765 >     current.result = callback(current.result, *args, **kw)
+2014-03-31 15:42:45.164867 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1126, in gotResult
+2014-03-31 15:42:45.164970 >     _inlineCallbacks(r, g, deferred)
+2014-03-31 15:42:45.165072 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 15:42:45.165187 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 15:42:45.165311 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 15:42:45.165414 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 15:42:45.165513 > --- <exception caught here> ---
+2014-03-31 15:42:45.165610 >   File "/home/dyne/01/p2pool/p2pool/util/deferral.py", line 41, in f
+2014-03-31 15:42:45.165728 >     result = yield func(*args, **kwargs)
+2014-03-31 15:42:45.165829 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 15:42:45.165927 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 15:42:45.166023 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 15:42:45.166121 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 15:42:45.166236 >   File "/home/dyne/01/p2pool/p2pool/bitcoin/helper.py", line 36, in getwork
+2014-03-31 15:42:45.166333 >     work = yield go()
+2014-03-31 15:42:45.166429 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 15:42:45.166526 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 15:42:45.166622 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 15:42:45.166745 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 15:42:45.166849 >   File "/home/dyne/01/p2pool/p2pool/util/jsonrpc.py", line 133, in _http_do
+2014-03-31 15:42:45.166946 >     raise Error_for_code(resp['error']['code'])(resp['error']['message'], resp['error'].get('data', None))
+2014-03-31 15:42:45.167083 > p2pool.util.jsonrpc.NarrowError: -9 Densecoin is not connected!
+2014-03-31 15:42:48.181341 > Error getting work from bitcoind:
+2014-03-31 15:42:48.181432 > Traceback (most recent call last):
+2014-03-31 15:42:48.181488 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+2014-03-31 15:42:48.181530 >     current.result = callback(current.result, *args, **kw)
+2014-03-31 15:42:48.181636 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1126, in gotResult
+2014-03-31 15:42:48.181687 >     _inlineCallbacks(r, g, deferred)
+2014-03-31 15:42:48.181737 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 15:42:48.181787 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 15:42:48.181836 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 15:42:48.181885 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 15:42:48.181931 > --- <exception caught here> ---
+2014-03-31 15:42:48.181977 >   File "/home/dyne/01/p2pool/p2pool/util/deferral.py", line 41, in f
+2014-03-31 15:42:48.182023 >     result = yield func(*args, **kwargs)
+2014-03-31 15:42:48.182087 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 15:42:48.182137 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 15:42:48.182184 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 15:42:48.182233 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 15:42:48.182280 >   File "/home/dyne/01/p2pool/p2pool/bitcoin/helper.py", line 36, in getwork
+2014-03-31 15:42:48.182327 >     work = yield go()
+2014-03-31 15:42:48.182374 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 15:42:48.182422 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 15:42:48.182468 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 15:42:48.182516 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 15:42:48.182579 >   File "/home/dyne/01/p2pool/p2pool/util/jsonrpc.py", line 133, in _http_do
+2014-03-31 15:42:48.182626 >     raise Error_for_code(resp['error']['code'])(resp['error']['message'], resp['error'].get('data', None))
+2014-03-31 15:42:48.182675 > p2pool.util.jsonrpc.NarrowError: -9 Densecoin is not connected!
+2014-03-31 15:43:29.846546 p2pool (version unknown 7032706f6f6c)
+2014-03-31 15:43:29.846683 
+2014-03-31 15:43:29.846804 Testing bitcoind RPC connection to 'http://127.0.0.1:55548/' with username 'densecoinrpc'...
+2014-03-31 15:43:29.858371 > Error getting work from bitcoind:
+2014-03-31 15:43:29.858501 > Traceback (most recent call last):
+2014-03-31 15:43:29.858587 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+2014-03-31 15:43:29.858672 >     current.result = callback(current.result, *args, **kw)
+2014-03-31 15:43:29.858765 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1126, in gotResult
+2014-03-31 15:43:29.858850 >     _inlineCallbacks(r, g, deferred)
+2014-03-31 15:43:29.858934 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 15:43:29.859019 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 15:43:29.859101 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 15:43:29.859194 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 15:43:29.859277 > --- <exception caught here> ---
+2014-03-31 15:43:29.859431 >   File "/home/dyne/01/p2pool/p2pool/util/deferral.py", line 41, in f
+2014-03-31 15:43:29.859524 >     result = yield func(*args, **kwargs)
+2014-03-31 15:43:29.859623 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 15:43:29.859708 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 15:43:29.859795 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 15:43:29.859889 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 15:43:29.859993 >   File "/home/dyne/01/p2pool/p2pool/bitcoin/helper.py", line 36, in getwork
+2014-03-31 15:43:29.860076 >     work = yield go()
+2014-03-31 15:43:29.860158 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 15:43:29.860243 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 15:43:29.860326 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 15:43:29.860454 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 15:43:29.860538 >   File "/home/dyne/01/p2pool/p2pool/util/jsonrpc.py", line 133, in _http_do
+2014-03-31 15:43:29.860621 >     raise Error_for_code(resp['error']['code'])(resp['error']['message'], resp['error'].get('data', None))
+2014-03-31 15:43:29.860705 > p2pool.util.jsonrpc.NarrowError: -9 Densecoin is not connected!
+2014-03-31 15:43:32.866790 > Error getting work from bitcoind:
+2014-03-31 15:43:32.866897 > Traceback (most recent call last):
+2014-03-31 15:43:32.866947 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+2014-03-31 15:43:32.866997 >     current.result = callback(current.result, *args, **kw)
+2014-03-31 15:43:32.867045 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1126, in gotResult
+2014-03-31 15:43:32.867093 >     _inlineCallbacks(r, g, deferred)
+2014-03-31 15:43:32.867141 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 15:43:32.867189 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 15:43:32.867236 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 15:43:32.867285 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 15:43:32.867467 > --- <exception caught here> ---
+2014-03-31 15:43:32.867525 >   File "/home/dyne/01/p2pool/p2pool/util/deferral.py", line 41, in f
+2014-03-31 15:43:32.867574 >     result = yield func(*args, **kwargs)
+2014-03-31 15:43:32.867622 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 15:43:32.867670 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 15:43:32.867717 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 15:43:32.867765 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 15:43:32.867812 >   File "/home/dyne/01/p2pool/p2pool/bitcoin/helper.py", line 36, in getwork
+2014-03-31 15:43:32.867860 >     work = yield go()
+2014-03-31 15:43:32.867921 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 15:43:32.867968 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 15:43:32.868015 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 15:43:32.868062 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 15:43:32.868109 >   File "/home/dyne/01/p2pool/p2pool/util/jsonrpc.py", line 133, in _http_do
+2014-03-31 15:43:32.868156 >     raise Error_for_code(resp['error']['code'])(resp['error']['message'], resp['error'].get('data', None))
+2014-03-31 15:43:32.868203 > p2pool.util.jsonrpc.NarrowError: -9 Densecoin is not connected!
+2014-03-31 15:44:03.181781 p2pool (version unknown 7032706f6f6c)
+2014-03-31 15:44:03.181945 
+2014-03-31 15:44:03.182089 Testing bitcoind RPC connection to 'http://127.0.0.1:55548/' with username 'densecoinrpc'...
+2014-03-31 15:44:03.193585 > Error getting work from bitcoind:
+2014-03-31 15:44:03.193694 > Traceback (most recent call last):
+2014-03-31 15:44:03.193760 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+2014-03-31 15:44:03.193848 >     current.result = callback(current.result, *args, **kw)
+2014-03-31 15:44:03.193941 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1126, in gotResult
+2014-03-31 15:44:03.194031 >     _inlineCallbacks(r, g, deferred)
+2014-03-31 15:44:03.194120 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 15:44:03.194265 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 15:44:03.194374 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 15:44:03.194462 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 15:44:03.194526 > --- <exception caught here> ---
+2014-03-31 15:44:03.194595 >   File "/home/dyne/01/p2pool/p2pool/util/deferral.py", line 41, in f
+2014-03-31 15:44:03.194658 >     result = yield func(*args, **kwargs)
+2014-03-31 15:44:03.194719 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 15:44:03.194782 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 15:44:03.194853 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 15:44:03.194916 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 15:44:03.194981 >   File "/home/dyne/01/p2pool/p2pool/bitcoin/helper.py", line 36, in getwork
+2014-03-31 15:44:03.195042 >     work = yield go()
+2014-03-31 15:44:03.195104 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 15:44:03.195166 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 15:44:03.195234 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 15:44:03.195295 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 15:44:03.195536 >   File "/home/dyne/01/p2pool/p2pool/util/jsonrpc.py", line 133, in _http_do
+2014-03-31 15:44:03.195688 >     raise Error_for_code(resp['error']['code'])(resp['error']['message'], resp['error'].get('data', None))
+2014-03-31 15:44:03.195841 > p2pool.util.jsonrpc.NarrowError: -9 Densecoin is not connected!
+2014-03-31 15:44:27.766128 p2pool (version unknown 7032706f6f6c)
+2014-03-31 15:44:27.766284 
+2014-03-31 15:44:27.766410 Testing bitcoind RPC connection to 'http://127.0.0.1:55548/' with username 'densecoinrpc'...
+2014-03-31 15:44:27.889639 > Error getting work from bitcoind:
+2014-03-31 15:44:27.889766 > Traceback (most recent call last):
+2014-03-31 15:44:27.889869 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+2014-03-31 15:44:27.889960 >     current.result = callback(current.result, *args, **kw)
+2014-03-31 15:44:27.890077 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1126, in gotResult
+2014-03-31 15:44:27.890172 >     _inlineCallbacks(r, g, deferred)
+2014-03-31 15:44:27.890258 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 15:44:27.890349 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 15:44:27.890430 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 15:44:27.890535 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 15:44:27.890605 > --- <exception caught here> ---
+2014-03-31 15:44:27.890669 >   File "/home/dyne/01/p2pool/p2pool/util/deferral.py", line 41, in f
+2014-03-31 15:44:27.890748 >     result = yield func(*args, **kwargs)
+2014-03-31 15:44:27.890830 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 15:44:27.890912 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 15:44:27.891003 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 15:44:27.891098 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 15:44:27.891181 >   File "/home/dyne/01/p2pool/p2pool/bitcoin/helper.py", line 36, in getwork
+2014-03-31 15:44:27.891269 >     work = yield go()
+2014-03-31 15:44:27.891412 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 15:44:27.891520 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 15:44:27.891591 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 15:44:27.891677 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 15:44:27.891777 >   File "/home/dyne/01/p2pool/p2pool/util/jsonrpc.py", line 133, in _http_do
+2014-03-31 15:44:27.891844 >     raise Error_for_code(resp['error']['code'])(resp['error']['message'], resp['error'].get('data', None))
+2014-03-31 15:44:27.891927 > p2pool.util.jsonrpc.NarrowError: -9 Densecoin is not connected!
+2014-03-31 15:45:23.807211 p2pool (version unknown 7032706f6f6c)
+2014-03-31 15:45:23.807567 
+2014-03-31 15:45:23.807688 Testing bitcoind RPC connection to 'http://127.0.0.1:55558/' with username 'densecoinrpc'...
+2014-03-31 15:45:53.819693 > Error while checking Bitcoin connection:
+2014-03-31 15:45:53.819854 > Traceback (most recent call last):
+2014-03-31 15:45:53.819979 > Failure: twisted.internet.defer.TimeoutError: Getting http://127.0.0.1:55558/ took longer than 30 seconds.
+2014-03-31 15:46:07.997080 > Error while checking Bitcoin connection:
+2014-03-31 15:46:07.997192 > Traceback (most recent call last):
+2014-03-31 15:46:07.997257 > Failure: twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.
+2014-03-31 15:46:32.044433 p2pool (version unknown 7032706f6f6c)
+2014-03-31 15:46:32.044603 
+2014-03-31 15:46:32.044799 Testing bitcoind RPC connection to 'http://127.0.0.1:55548/' with username 'densecoinrpc'...
+2014-03-31 15:46:32.081111 > Error getting work from bitcoind:
+2014-03-31 15:46:32.081242 > Traceback (most recent call last):
+2014-03-31 15:46:32.081317 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+2014-03-31 15:46:32.081451 >     current.result = callback(current.result, *args, **kw)
+2014-03-31 15:46:32.081519 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1126, in gotResult
+2014-03-31 15:46:32.081588 >     _inlineCallbacks(r, g, deferred)
+2014-03-31 15:46:32.081686 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 15:46:32.081784 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 15:46:32.081887 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 15:46:32.081986 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 15:46:32.082083 > --- <exception caught here> ---
+2014-03-31 15:46:32.082180 >   File "/home/dyne/01/p2pool/p2pool/util/deferral.py", line 41, in f
+2014-03-31 15:46:32.082278 >     result = yield func(*args, **kwargs)
+2014-03-31 15:46:32.082416 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 15:46:32.082529 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 15:46:32.082596 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 15:46:32.082662 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 15:46:32.082764 >   File "/home/dyne/01/p2pool/p2pool/bitcoin/helper.py", line 36, in getwork
+2014-03-31 15:46:32.082878 >     work = yield go()
+2014-03-31 15:46:32.082977 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 15:46:32.083101 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 15:46:32.083168 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 15:46:32.083271 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 15:46:32.083437 >   File "/home/dyne/01/p2pool/p2pool/util/jsonrpc.py", line 133, in _http_do
+2014-03-31 15:46:32.083545 >     raise Error_for_code(resp['error']['code'])(resp['error']['message'], resp['error'].get('data', None))
+2014-03-31 15:46:32.083659 > p2pool.util.jsonrpc.NarrowError: -9 Densecoin is not connected!
+2014-03-31 15:50:10.529606 p2pool (version unknown 7032706f6f6c)
+2014-03-31 15:50:10.529761 
+2014-03-31 15:50:10.529901 Testing bitcoind RPC connection to 'http://127.0.0.1:55548/' with username 'densecoinrpc'...
+2014-03-31 15:50:10.564948 > Error getting work from bitcoind:
+2014-03-31 15:50:10.565071 > Traceback (most recent call last):
+2014-03-31 15:50:10.565158 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+2014-03-31 15:50:10.565260 >     current.result = callback(current.result, *args, **kw)
+2014-03-31 15:50:10.565345 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1126, in gotResult
+2014-03-31 15:50:10.565429 >     _inlineCallbacks(r, g, deferred)
+2014-03-31 15:50:10.565512 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 15:50:10.565596 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 15:50:10.565678 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 15:50:10.565783 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 15:50:10.565866 > --- <exception caught here> ---
+2014-03-31 15:50:10.565948 >   File "/home/dyne/01/p2pool/p2pool/util/deferral.py", line 41, in f
+2014-03-31 15:50:10.566032 >     result = yield func(*args, **kwargs)
+2014-03-31 15:50:10.566116 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 15:50:10.566219 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 15:50:10.566303 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 15:50:10.566387 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 15:50:10.566470 >   File "/home/dyne/01/p2pool/p2pool/bitcoin/helper.py", line 36, in getwork
+2014-03-31 15:50:10.566552 >     work = yield go()
+2014-03-31 15:50:10.566635 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 15:50:10.566736 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 15:50:10.566820 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 15:50:10.566905 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 15:50:10.566988 >   File "/home/dyne/01/p2pool/p2pool/util/jsonrpc.py", line 133, in _http_do
+2014-03-31 15:50:10.567071 >     raise Error_for_code(resp['error']['code'])(resp['error']['message'], resp['error'].get('data', None))
+2014-03-31 15:50:10.567155 > p2pool.util.jsonrpc.NarrowError: -9 Densecoin is not connected!
+2014-03-31 22:59:17.058124 p2pool (version unknown 7032706f6f6c)
+2014-03-31 22:59:17.058273 
+2014-03-31 22:59:17.058400 Testing bitcoind RPC connection to 'http://127.0.0.1:55548/' with username 'densecoinrpc'...
+2014-03-31 22:59:17.183830 > Error getting work from bitcoind:
+2014-03-31 22:59:17.183937 > Traceback (most recent call last):
+2014-03-31 22:59:17.183991 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+2014-03-31 22:59:17.184039 >     current.result = callback(current.result, *args, **kw)
+2014-03-31 22:59:17.184086 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1126, in gotResult
+2014-03-31 22:59:17.184129 >     _inlineCallbacks(r, g, deferred)
+2014-03-31 22:59:17.184179 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 22:59:17.184222 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 22:59:17.184262 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 22:59:17.184304 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 22:59:17.184344 > --- <exception caught here> ---
+2014-03-31 22:59:17.184384 >   File "/home/dyne/01/p2pool/p2pool/util/deferral.py", line 41, in f
+2014-03-31 22:59:17.184683 >     result = yield func(*args, **kwargs)
+2014-03-31 22:59:17.184733 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 22:59:17.184776 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 22:59:17.184816 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 22:59:17.184858 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 22:59:17.184897 >   File "/home/dyne/01/p2pool/p2pool/bitcoin/helper.py", line 36, in getwork
+2014-03-31 22:59:17.184938 >     work = yield go()
+2014-03-31 22:59:17.184978 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 22:59:17.185019 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 22:59:17.185075 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 22:59:17.185117 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 22:59:17.185158 >   File "/home/dyne/01/p2pool/p2pool/util/jsonrpc.py", line 133, in _http_do
+2014-03-31 22:59:17.185198 >     raise Error_for_code(resp['error']['code'])(resp['error']['message'], resp['error'].get('data', None))
+2014-03-31 22:59:17.185239 > p2pool.util.jsonrpc.NarrowError: -9 Densecoin is not connected!
+2014-03-31 23:11:18.730937 p2pool (version unknown 7032706f6f6c)
+2014-03-31 23:11:18.731078 
+2014-03-31 23:11:18.731229 Testing bitcoind RPC connection to 'http://127.0.0.1:55548/' with username 'densecoinrpc'...
+2014-03-31 23:11:18.741662 > Error getting work from bitcoind:
+2014-03-31 23:11:18.741763 > Traceback (most recent call last):
+2014-03-31 23:11:18.741836 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+2014-03-31 23:11:18.741908 >     current.result = callback(current.result, *args, **kw)
+2014-03-31 23:11:18.741983 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1126, in gotResult
+2014-03-31 23:11:18.742072 >     _inlineCallbacks(r, g, deferred)
+2014-03-31 23:11:18.742143 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 23:11:18.742214 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 23:11:18.742288 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 23:11:18.742366 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 23:11:18.742435 > --- <exception caught here> ---
+2014-03-31 23:11:18.742506 >   File "/home/dyne/01/p2pool/p2pool/util/deferral.py", line 41, in f
+2014-03-31 23:11:18.742590 >     result = yield func(*args, **kwargs)
+2014-03-31 23:11:18.742659 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 23:11:18.742730 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 23:11:18.742804 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 23:11:18.742886 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 23:11:18.742957 >   File "/home/dyne/01/p2pool/p2pool/bitcoin/helper.py", line 36, in getwork
+2014-03-31 23:11:18.743031 >     work = yield go()
+2014-03-31 23:11:18.743291 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 23:11:18.743380 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 23:11:18.743453 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 23:11:18.743545 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 23:11:18.743617 >   File "/home/dyne/01/p2pool/p2pool/util/jsonrpc.py", line 133, in _http_do
+2014-03-31 23:11:18.743694 >     raise Error_for_code(resp['error']['code'])(resp['error']['message'], resp['error'].get('data', None))
+2014-03-31 23:11:18.743767 > p2pool.util.jsonrpc.NarrowError: -9 Densecoin is not connected!
+2014-03-31 23:12:18.226192 p2pool (version unknown 7032706f6f6c)
+2014-03-31 23:12:18.226385 
+2014-03-31 23:12:18.226536 Testing bitcoind RPC connection to 'http://127.0.0.1:55554/' with username 'densecoinrpc'...
+2014-03-31 23:12:48.231113 > Error while checking Bitcoin connection:
+2014-03-31 23:12:48.231196 > Traceback (most recent call last):
+2014-03-31 23:12:48.231234 > Failure: twisted.internet.defer.TimeoutError: Getting http://127.0.0.1:55554/ took longer than 30 seconds.
+2014-03-31 23:13:19.233666 > Error while checking Bitcoin connection:
+2014-03-31 23:13:19.233744 > Traceback (most recent call last):
+2014-03-31 23:13:19.233780 > Failure: twisted.internet.defer.TimeoutError: Getting http://127.0.0.1:55554/ took longer than 30 seconds.
+2014-03-31 23:13:48.080487 > Error while checking Bitcoin connection:
+2014-03-31 23:13:48.080710 > Traceback (most recent call last):
+2014-03-31 23:13:48.080754 > Failure: twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.
+2014-03-31 23:14:04.994274 p2pool (version unknown 7032706f6f6c)
+2014-03-31 23:14:04.994501 
+2014-03-31 23:14:04.994668 Testing bitcoind RPC connection to 'http://127.0.0.1:55548/' with username 'densecoinrpc'...
+2014-03-31 23:14:05.005164 > Error getting work from bitcoind:
+2014-03-31 23:14:05.005263 > Traceback (most recent call last):
+2014-03-31 23:14:05.005337 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+2014-03-31 23:14:05.005412 >     current.result = callback(current.result, *args, **kw)
+2014-03-31 23:14:05.005487 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1126, in gotResult
+2014-03-31 23:14:05.005573 >     _inlineCallbacks(r, g, deferred)
+2014-03-31 23:14:05.005644 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 23:14:05.005717 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 23:14:05.005791 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 23:14:05.005866 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 23:14:05.005937 > --- <exception caught here> ---
+2014-03-31 23:14:05.006042 >   File "/home/dyne/01/p2pool/p2pool/util/deferral.py", line 41, in f
+2014-03-31 23:14:05.006114 >     result = yield func(*args, **kwargs)
+2014-03-31 23:14:05.006184 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 23:14:05.006265 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 23:14:05.006337 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 23:14:05.006410 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 23:14:05.006481 >   File "/home/dyne/01/p2pool/p2pool/bitcoin/helper.py", line 36, in getwork
+2014-03-31 23:14:05.006565 >     work = yield go()
+2014-03-31 23:14:05.006767 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 23:14:05.006841 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 23:14:05.006913 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 23:14:05.007002 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 23:14:05.007084 >   File "/home/dyne/01/p2pool/p2pool/util/jsonrpc.py", line 133, in _http_do
+2014-03-31 23:14:05.007155 >     raise Error_for_code(resp['error']['code'])(resp['error']['message'], resp['error'].get('data', None))
+2014-03-31 23:14:05.007229 > p2pool.util.jsonrpc.NarrowError: -9 Densecoin is not connected!
+2014-03-31 23:14:08.012368 > Error getting work from bitcoind:
+2014-03-31 23:14:08.012492 > Traceback (most recent call last):
+2014-03-31 23:14:08.012588 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+2014-03-31 23:14:08.012755 >     current.result = callback(current.result, *args, **kw)
+2014-03-31 23:14:08.012859 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1126, in gotResult
+2014-03-31 23:14:08.012938 >     _inlineCallbacks(r, g, deferred)
+2014-03-31 23:14:08.013037 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 23:14:08.013129 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 23:14:08.013223 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 23:14:08.013313 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 23:14:08.013398 > --- <exception caught here> ---
+2014-03-31 23:14:08.013488 >   File "/home/dyne/01/p2pool/p2pool/util/deferral.py", line 41, in f
+2014-03-31 23:14:08.013559 >     result = yield func(*args, **kwargs)
+2014-03-31 23:14:08.013649 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 23:14:08.013735 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 23:14:08.013851 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 23:14:08.013975 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 23:14:08.014059 >   File "/home/dyne/01/p2pool/p2pool/bitcoin/helper.py", line 36, in getwork
+2014-03-31 23:14:08.014155 >     work = yield go()
+2014-03-31 23:14:08.014241 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 23:14:08.014348 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 23:14:08.014434 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 23:14:08.014531 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 23:14:08.014648 >   File "/home/dyne/01/p2pool/p2pool/util/jsonrpc.py", line 133, in _http_do
+2014-03-31 23:14:08.014739 >     raise Error_for_code(resp['error']['code'])(resp['error']['message'], resp['error'].get('data', None))
+2014-03-31 23:14:08.014848 > p2pool.util.jsonrpc.NarrowError: -9 Densecoin is not connected!
+2014-03-31 23:35:57.825748 p2pool (version unknown 7032706f6f6c)
+2014-03-31 23:35:57.825952 
+2014-03-31 23:35:57.826116 Testing bitcoind RPC connection to 'http://127.0.0.1:55548/' with username 'densecoinrpc'...
+2014-03-31 23:35:57.835790 > Error getting work from bitcoind:
+2014-03-31 23:35:57.835915 > Traceback (most recent call last):
+2014-03-31 23:35:57.836059 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+2014-03-31 23:35:57.836142 >     current.result = callback(current.result, *args, **kw)
+2014-03-31 23:35:57.836219 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1126, in gotResult
+2014-03-31 23:35:57.836292 >     _inlineCallbacks(r, g, deferred)
+2014-03-31 23:35:57.836380 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 23:35:57.836453 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 23:35:57.836525 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 23:35:57.836641 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 23:35:57.836720 > --- <exception caught here> ---
+2014-03-31 23:35:57.836804 >   File "/home/dyne/01/p2pool/p2pool/util/deferral.py", line 41, in f
+2014-03-31 23:35:57.836892 >     result = yield func(*args, **kwargs)
+2014-03-31 23:35:57.836964 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 23:35:57.837037 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 23:35:57.837108 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 23:35:57.837179 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 23:35:57.837250 >   File "/home/dyne/01/p2pool/p2pool/bitcoin/helper.py", line 36, in getwork
+2014-03-31 23:35:57.837345 >     work = yield go()
+2014-03-31 23:35:57.837426 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1068, in _inlineCallbacks
+2014-03-31 23:35:57.837497 >     result = result.throwExceptionIntoGenerator(g)
+2014-03-31 23:35:57.837571 >   File "/usr/lib/python2.7/dist-packages/twisted/python/failure.py", line 389, in throwExceptionIntoGenerator
+2014-03-31 23:35:57.837650 >     return g.throw(self.type, self.value, self.tb)
+2014-03-31 23:35:57.837724 >   File "/home/dyne/01/p2pool/p2pool/util/jsonrpc.py", line 133, in _http_do
+2014-03-31 23:35:57.837794 >     raise Error_for_code(resp['error']['code'])(resp['error']['message'], resp['error'].get('data', None))
+2014-03-31 23:35:57.837869 > p2pool.util.jsonrpc.NarrowError: -9 Densecoin is not connected!
